@@ -32,8 +32,9 @@ public class Order {
         return createdAt;
     }
 
-    public void setCreatedAt(LocalDateTime createdAt) {
+    public Order setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
+        return this;
     }
 
     public long getCreatedByUserId() {
