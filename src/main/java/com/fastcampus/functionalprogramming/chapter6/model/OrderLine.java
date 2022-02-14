@@ -18,40 +18,45 @@ public class OrderLine {
         return id;
     }
 
-    public void setId(long id) {
+    public OrderLine setId(long id) {
         this.id = id;
+        return this;
     }
 
     public OrderLineType getType() {
         return type;
     }
 
-    public void setType(OrderLineType type) {
+    public OrderLine setType(OrderLineType type) {
         this.type = type;
+        return this;
     }
 
     public long getProductId() {
         return productId;
     }
 
-    public void setProductId(long productId) {
+    public OrderLine setProductId(long productId) {
         this.productId = productId;
+        return this;
     }
 
     public int getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(int quantity) {
+    public OrderLine setQuantity(int quantity) {
         this.quantity = quantity;
+        return this;
     }
 
     public BigDecimal getAmount() {
         return amount;
     }
 
-    public void setAmount(BigDecimal amount) {
+    public OrderLine setAmount(BigDecimal amount) {
         this.amount = amount;
+        return this;
     }
 
     @Override

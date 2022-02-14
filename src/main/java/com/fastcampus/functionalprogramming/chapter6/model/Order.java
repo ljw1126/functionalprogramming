@@ -64,6 +64,15 @@ public class Order {
         return this;
     }
 
+    public List<OrderLine> getOrderLines() {
+        return orderLines;
+    }
+
+    public Order setOrderLines(List<OrderLine> orderLines) {
+        this.orderLines = orderLines;
+        return this;
+    }
+
     @Override
     public String toString() {
         return "Order{" +
