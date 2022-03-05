@@ -1,5 +1,6 @@
 package com.fastcampus.functionalprogramming.chapter6.model;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class User {
@@ -8,6 +9,7 @@ public class User {
     private String emailAddress;
     private boolean isVerified;
     private List<Integer> friendUserIds;
+    private LocalDateTime createdAt;
 
     public int getId() {
         return id;
@@ -54,14 +56,12 @@ public class User {
         return this;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", emailAddress='" + emailAddress + '\'' +
-                ", isVerified=" + isVerified +
-                ", friendUserIds=" + friendUserIds +
-                '}';
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public User setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+        return this;
     }
 }
