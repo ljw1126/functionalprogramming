@@ -11,6 +11,7 @@ public class Chapter4Section1 {
         printRandomDoubles(myRandomDoubleSuppiler,5);
     }
 
+    // helper method
     public static void printRandomDoubles(Supplier<Double> randomSupplier, int count){
         for(int i=0 ; i< count ; i++)
             System.out.println(randomSupplier.get());

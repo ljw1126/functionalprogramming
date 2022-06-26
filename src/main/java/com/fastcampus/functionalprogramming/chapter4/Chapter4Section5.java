@@ -1,16 +1,17 @@
 package com.fastcampus.functionalprogramming.chapter4;
 
-import java.util.Comparator;
-import java.util.List;
 import com.fastcampus.functionalprogramming.chapter4.model.User;
+
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  *  Comparator 인터페이스
- *  음수면 o1 < o2
+ *  음수면 o1 < o2 , 오름차순 정렬
  *  0이면 o1 = o2
- *  양수이면 o1 > o2
+ *  양수이면 o1 > o2 , 내림차순 정렬
  */
 public class Chapter4Section5 {
     public static void main(String[] args) {
